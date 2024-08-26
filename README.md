@@ -24,3 +24,6 @@
 - Json格式容易维护，感谢项目 [StudyCat404/WhatAV](https://github.com/StudyCat404/WhatAV) 提供的支持
 - 我们将持续维护本仓库，欢迎给我们提交PR~
 
+## 🙏 感谢各位师傅
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Aabyss-Team/Antivirus-Scan&type=Date)](https://star-history.com/#Aabyss-Team/Antivirus-Scan&Date)
