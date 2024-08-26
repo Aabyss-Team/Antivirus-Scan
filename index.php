@@ -108,7 +108,7 @@
         <h1>杀软在线识别-<a href="https://www.aabyss.cn">渊龙Sec安全团队</a></h1>
     <h3>如有漏报欢迎提交至我们的开源项目</br><a href="https://github.com/Aabyss-Team/Antivirus-Scan">https://github.com/Aabyss-Team/Antivirus-Scan</a></h3>
         <form action="index.php" method="POST">
-            <textarea name="user_input" id="user_input" placeholder="在此输入内容..."><?php echo htmlspecialchars($input); ?></textarea>
+            <textarea name="user_input" id="user_input" placeholder="在此输入 tasklist /SVC 命令的执行结果..."><?php echo htmlspecialchars($input); ?></textarea>
             <div>
                 <button type="submit">提交</button>
                 <button type="button" class="clear" onclick="clearForm()">清空</button>
