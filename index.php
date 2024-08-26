@@ -103,6 +103,7 @@
         }
         ?>
 
+        <!-- 表单 -->
         <h1>杀软在线识别-<a href="https://www.aabyss.cn">渊龙Sec安全团队</a></h1>
     <h3>如有漏报欢迎提交至我们的开源项目</br><a href=\"https://github.com/Aabyss-Team/Antivirus-Scan\">https://github.com/Aabyss-Team/Antivirus-Scan</a></h3>
         <form action="index.php" method="POST">
@@ -113,7 +114,7 @@
             </div>
         </form>
         </br>
-
+        <!-- 结果显示区域 -->
         <div class="result" id="result">
             <?php echo $result; ?>
         </div>
