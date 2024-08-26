@@ -119,7 +119,7 @@
         <div class="result" id="result">
             <?php echo $result; ?>
         </div>
-        <h4>项目版本号V1.1-2024.08</h4>
+        <h4>项目版本号V1.2-2024.08</h4>
     </div>
 </body>
 </html>
