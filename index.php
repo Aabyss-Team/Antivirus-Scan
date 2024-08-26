@@ -74,13 +74,15 @@
             margin-bottom: 20px;
             font-size: 18px;
             color: #333;
-            word-wrap: break-word;
-            text-align: left;
             background-color: #f9f9f9;
             padding: 15px;
             border-radius: 5px;
             max-height: 300px;
             overflow-y: auto;
+        }
+        .result p {
+            text-align: center; /* 每行内容居中显示 */
+            margin: 5px 0;
         }
         #commandInput {
             width: 200px;
@@ -162,9 +164,11 @@
         <input type="text" id="commandInput" value="tasklist /SVC" readonly>
         </br>
         <!-- 结果显示区域 -->
-        <div class="result" id="result">
-            <?php echo $result; ?>
-        </div>
+        <?php if ($result !== ''): ?>
+            <div class="result">
+                <?php echo $result; ?>
+            </div>
+        <?php endif; ?>
         <h4>项目版本号V1.4-2024.08</h4>
     </div>
 </body>
