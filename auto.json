@@ -322,26 +322,20 @@
 		"url":"https://cmccybersecurity.com/giai-phap/"},
 	"金山毒霸":{
 		"processes":["kxescore.exe","kupdata.exe","kxetray.exe","kwsprotect64.exe"],
-		"url":"http://www.ijinshan.com/"
-	},
+		"url":"http://www.ijinshan.com/"},
 	"Malwarebytes":{
 		"processes":["MBAMService.exe","mbam.exe","mbamtray.exe"],
-		"url":"https://www.malwarebytes.com/"
-	},
+		"url":"https://www.malwarebytes.com/"},
 	"Agnitum outpost":{
 		"processes":["outpost.exe","acs.exe"],
-		"url":"https://agnitum-outpost-security-suite.en.softonic.com/"
-	},
+		"url":"https://agnitum-outpost-security-suite.en.softonic.com/"},
 	"Cynet":{
 		"processes":["CynetLauncher.exe","CynetDS.exe","CynetEPS.exe","CynetMS.exe","CynetAR.exe","CynetGW.exe","CynetSD64.exe"],
-		"url":"https://www.cynet.com/"
-	},
+		"url":"https://www.cynet.com/"},
 	"Elastic":{
 		"processes":["winlogbeat.exe"],
-		"url":"https://www.elastic.co/"
-	},
+		"url":"https://www.elastic.co/"},
 	"MaxSecure":{
 		"processes":["MaxAVPlusDM.exe","MaxRCSystemTray.exe","RCSystemTray.exe","SDSystemTray.exe","LiveUpdateSD.exe"],
-		"url":"https://maxsecureantivirus.com/"
-	}
+		"url":"https://maxsecureantivirus.com/"}
 }
