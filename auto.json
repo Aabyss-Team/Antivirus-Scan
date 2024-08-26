@@ -3274,8 +3274,11 @@
     "SentinelOne": {
         "processes": [
             "SentinelServiceHost.exe",
+            "SentinelStaticEngine.exe",
+            "SentinelStaticEngineScanner.exe",
             "SentinelMemoryScanner.exe",
             "SentinelAgent.exe",
+            "SentinelAgentWorker.exe",
             "SentinelUI.exe"
         ],
         "url": "https://www.sentinelone.com/"
