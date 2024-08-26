@@ -3281,5 +3281,13 @@
             "SentinelUI.exe"
         ],
         "url": "https://www.sentinelone.com/"
+    },
+    "OneSec": {
+        "processes": [
+            "tbAgent.exe",
+            "tbAgentSrv.exe",
+            "tbGuard.exe"
+        ],
+        "url": "https://threatbook.cn/onesec"
     }
 }
