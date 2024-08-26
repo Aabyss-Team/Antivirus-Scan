@@ -3274,7 +3274,7 @@
     "SentinelOne": {
         "processes": [
             "SentinelServiceHost.exe",
-            "SentinelMemoryScanner.exe","
+            "SentinelMemoryScanner.exe",
             "SentinelAgent.exe",
             "SentinelUI.exe"
         ],
