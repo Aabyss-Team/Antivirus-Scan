@@ -435,10 +435,6 @@
         ],
         "url": "https://www.secureage.com/"
     },
-    "SentinelOne (Static ML)": {
-        "processes": [],
-        "url": "https://www.sentinelone.com/"
-    },
     "Sophos AV": {
         "processes": [
             "SavProgress.exe",
@@ -3274,5 +3270,14 @@
             "/usr/local/qcloud/tat_agent/"
         ],
         "url": ""
+    },
+    "SentinelOne": {
+        "processes": [
+            "SentinelServiceHost.exe",
+            "SentinelMemoryScanner.exe","
+            "SentinelAgent.exe",
+            "SentinelUI.exe"
+        ],
+        "url": "https://www.sentinelone.com/"
     }
 }
