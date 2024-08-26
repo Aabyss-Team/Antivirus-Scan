@@ -17,55 +17,89 @@
             background-color: #f0f0f0;
         }
         .container {
-            width: 50%; /* 宽度设置为50% */
-            padding: 40px; /* 增加内边距 */
+            width: 60%;
+            max-width: 800px;
+            padding: 40px;
             text-align: center;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px; /* 增加圆角 */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         textarea {
             width: 100%;
             height: 200px;
             margin-top: 20px;
-            padding: 10px;
+            padding: 15px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
             resize: vertical;
         }
-        button {
+        .button-group {
             margin-top: 20px;
-            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        button {
+            padding: 10px 25px;
             font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-right: 10px;
+            transition: background-color 0.3s ease;
         }
-        button:hover {
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .submit-button:hover {
             background-color: #45a049;
         }
-        button.clear {
+        .clear-button {
             background-color: #f44336;
+            color: white;
         }
-        button.clear:hover {
+        .clear-button:hover {
             background-color: #e53935;
+        }
+        .copy-button {
+            background-color: #008CBA;
+            color: white;
+        }
+        .copy-button:hover {
+            background-color: #007B9A;
         }
         .result {
             margin-bottom: 20px;
             font-size: 18px;
             color: #333;
             word-wrap: break-word;
+            text-align: left;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        #commandInput {
+            width: 200px;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
         }
     </style>
     <script>
-        function clearForm() {
-            // 清空文本框和结果显示区域
+        function clearTextarea() {
             document.getElementById('user_input').value = '';
-            document.getElementById('result').innerHTML = '';
+        }
+
+        function copyToClipboard() {
+            var copyText = document.getElementById("commandInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // 对移动设备有用
+            document.execCommand("copy");
+            alert("已复制: " + copyText.value);
         }
     </script>
 </head>
@@ -109,17 +143,21 @@
     <h3>如有漏报欢迎提交至我们的开源项目</br><a href="https://github.com/Aabyss-Team/Antivirus-Scan">https://github.com/Aabyss-Team/Antivirus-Scan</a></h3>
         <form action="index.php" method="POST">
             <textarea name="user_input" id="user_input" placeholder="在此输入 tasklist /SVC 命令的执行结果..."><?php echo htmlspecialchars($input); ?></textarea>
-            <div>
-                <button type="submit">提交</button>
-                <button type="button" class="clear" onclick="clearForm()">清空</button>
+            <div class="button-group">
+                <button type="submit" class="submit-button">提交</button>
+                <button type="button" class="clear-button" onclick="clearTextarea()">清空</button>
+                <button type="button" class="copy-button" onclick="copyToClipboard()">复制命令</button>
             </div>
         </form>
+        
+        <!-- 输入框用于展示要复制的命令 -->
+        <input type="text" id="commandInput" value="tasklist /SVC" readonly>
         </br>
         <!-- 结果显示区域 -->
         <div class="result" id="result">
             <?php echo $result; ?>
         </div>
-        <h4>项目版本号V1.2-2024.08</h4>
+        <h4>项目版本号V1.3-2024.08</h4>
     </div>
 </body>
 </html>
