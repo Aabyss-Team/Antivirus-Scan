@@ -114,19 +114,27 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $input = $_POST['user_input'] ?? '';
 
+            // 按行拆分输入的内容
+            $lines = explode("\n", $input);
+
             // 加载并解析 JSON 文件
             $jsonData = file_get_contents('auto.json');
             $data = json_decode($jsonData, true);
 
-            // 遍历 JSON 数据，检查每个软件的进程列表
-            foreach ($data as $softwareName => $details) {
-                $processes = $details['processes'];
-                $url = $details['url'];
+            // 遍历每一行输入
+            foreach ($lines as $line) {
+                $line = trim($line); // 移除前后空白字符
 
-                // 检查是否包含指定的进程名
-                foreach ($processes as $process) {
-                    if (stripos($input, $process) !== false) {  // 使用 stripos 忽略大小写
-                        $result .= "$process ==> $softwareName: <a href=\"$url\" target=\"_blank\">$url</a><br>";
+                // 遍历 JSON 数据，检查每个软件的进程列表
+                foreach ($data as $softwareName => $details) {
+                    $processes = $details['processes'];
+                    $url = $details['url'];
+
+                    // 检查是否包含指定的进程名，且匹配行的开头
+                    foreach ($processes as $process) {
+                        if (stripos($line, $process) === 0) {  // 使用 stripos 忽略大小写，并确保匹配开头
+                            $result .= htmlspecialchars($process) . " ==> <strong>" . htmlspecialchars($softwareName) . ":</strong> <a href='" . htmlspecialchars($url) . "' target='_blank'>" . htmlspecialchars($url) . "</a><br>";
+                        }
                     }
                 }
             }
@@ -157,7 +165,7 @@
         <div class="result" id="result">
             <?php echo $result; ?>
         </div>
-        <h4>项目版本号V1.3-2024.08</h4>
+        <h4>项目版本号V1.4-2024.08</h4>
     </div>
 </body>
 </html>
