@@ -281,6 +281,9 @@
 	"SPHINX防火墙":{
 		"processes":["SPHINX.exe"],
 		"url":""},
+	"奇安信天擎":{
+		"processes":["TQClient.exe","TQClient.exe","TQTray.exe","QaxEngManager.exe","TQDefender.exe"],
+		"url":"https://www.qianxin.com/product/detail/pid/330"},
 	"Enhanced Mitigation Experience Toolkit":{
 		"processes":["emet_agent.exe","emet_service.exe"],
 		"url":"https://www.microsoft.com/"},
