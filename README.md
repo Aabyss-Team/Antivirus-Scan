@@ -14,6 +14,7 @@
 
 ## 📝 TODO
 
+* [x] 从开头进行进程匹配，避免进程识别结果误报
 * [x] 新增对于 `OneSEC` 微步终端在线安全进程的识别，感谢 @SunshineBread 师傅提供的资料
 * [x] 新增对于 `SentinelOne` 哨兵一号进程的识别，感谢 @wulala 师傅提供的资料
 * [x] 新增复制命令按钮，一键复制 `tasklist /SVC` 命令
