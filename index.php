@@ -169,7 +169,7 @@
                 <?php echo $result; ?>
             </div>
         <?php endif; ?>
-        <h4>项目版本号V1.4-2024.08</h4>
+        <h4>项目版本号V1.5-2024.08</h4>
     </div>
 </body>
 </html>
