@@ -64,7 +64,7 @@
         ],
         "url": "https://www.avast.com"
     },
-    "Avira AntiVirus": {
+    "Avira AntiVirus(小红伞)": {
         "processes": [
             "avcenter.exe",
             "avguard.exe",
@@ -89,7 +89,9 @@
             "BitDefenderCom.exe",
             "vsserv.exe",
             "bdredline.exe",
-            "bdservicehost.exe"
+            "secenter.exe",
+            "bdservicehost.exe",
+            "BITDEFENDER.exe"
         ],
         "url": "http://www.bitdefender.com/"
     },
@@ -132,7 +134,7 @@
         ],
         "url": "https://www.comodo.com"
     },
-    "CrowdStrike Falcon": {
+    "CrowdStrike Falcon(猎鹰)": {
         "processes": [
             "csfalconservice.exe",
             "CSFalconContainer.exe"
@@ -183,8 +185,9 @@
     },
     "Emsisoft": {
         "processes": [
-            "a2cmd.exe",
-            "a2guard.exe"
+            "a2guard.exe",
+            "a2free.exe",
+            "a2service.exe"
         ],
         "url": "https://www.emsisoft.com/"
     },
@@ -221,7 +224,7 @@
         ],
         "url": "https://www.f-secure.com"
     },
-    "FireEye": {
+    "FireEye(火眼)": {
         "processes": [
             "xagtnotif.exe",
             "xagt.exe"
@@ -273,7 +276,7 @@
         ],
         "url": "http://viruslab.k7computing.com/"
     },
-    "Kaspersky": {
+    "Kaspersky(卡巴斯基)": {
         "processes": [
             "avp.exe",
             "avpcc.exe",
@@ -286,23 +289,13 @@
         ],
         "url": "https://www.kaspersky.com"
     },
-    "Kingsoft": {
-        "processes": [
-            "kxetray.exe",
-            "ksafe.exe",
-            "KSWebShield.exe",
-            "kpfwtray.exe",
-            "KWatch.exe",
-            "KSafeSvc.exe",
-            "KSafeTray.exe"
-        ],
-        "url": "http://www.duba.net/"
-    },
     "Max Secure Software": {
         "processes": [
             "SDSystemTray.exe",
             "MaxRCSystemTray.exe",
-            "RCSystemTray.exe"
+            "RCSystemTray.exe",
+            "MaxAVPlusDM.exe",
+            "LiveUpdateSD.exe"
         ],
         "url": "https://www.maxpcsecure.com/"
     },
@@ -314,7 +307,7 @@
         ],
         "url": "https://www.malwarebytes.com/"
     },
-    "McAfee": {
+    "McAfee(迈克菲)": {
         "processes": [
             "Mcshield.exe",
             "Tbmon.exe",
@@ -340,7 +333,28 @@
             "mpftray.exe",
             "vshwin32.exe",
             "vsstat.exe",
-            "guarddog.exe"
+            "guarddog.exe",
+            "mfeann.exe",
+            "udaterui.exe",
+            "naprdmgr.exe",
+            "mctray.exe",
+            "fcagate.exe",
+            "fcag.exe",
+            "fcags.exe",
+            "fcagswd.exe",
+            "macompatsvc.exe",
+            "masvc.exe",
+            "mcamnsvc.exe",
+            "mctary.exe",
+            "mfecanary.exe",
+            "mfeconsole.exe",
+            "mfeesp.exe",
+            "mfefire.exe",
+            "mfefw.exe",
+            "mfemms.exe",
+            "mfetp.exe",
+            "mfewc.exe",
+            "mfewch.exe"
         ],
         "url": "https://www.mcafee.com/en-us"
     },
@@ -349,6 +363,7 @@
             "MsMpEng.exe",
             "msseces.exe",
             "mssecess.exe",
+            "emet_agent.exe",
             "emet_service.exe",
             "drwatson.exe",
             "MpCmdRun.exe",
@@ -371,14 +386,6 @@
             "nanosvc.exe"
         ],
         "url": "https://nano-av.com/"
-    },
-    "a-squared free": {
-        "processes": [
-            "a2guard.exe",
-            "a2free.exe",
-            "a2service.exe"
-        ],
-        "url": "https://baike.baidu.com/item/a-squared%20Free/481873?fr=aladdin"
     },
     "Palo Alto Networks": {
         "processes": [
@@ -414,7 +421,8 @@
         "processes": [
             "RavMonD.exe",
             "rfwmain.exe",
-            "RsMgrSvc.exe"
+            "RsMgrSvc.exe",
+            "RavMon.exe"
         ],
         "url": "http://antivirus.rising.com.cn/"
     },
@@ -438,13 +446,17 @@
     "Sophos AV": {
         "processes": [
             "SavProgress.exe",
+            "icmon.exe",
+            "SavMain.exe",
             "SophosUI.exe",
             "SophosFS.exe",
             "SophosHealth.exe",
             "SophosSafestore64.exe",
             "SophosCleanM.exe",
-            "icmon.exe",
-            "SavMain.exe"
+            "SophosFileScanner.exe",
+            "SophosNtpService.exe",
+            "SophosOsquery.exe",
+            "Sophos UI.exe"
         ],
         "url": "https://www.sophos.com/"
     },
@@ -462,7 +474,10 @@
             "luall.exe",
             "lucomserver.exe",
             "sbserv.exe",
-            "ccEvtMgr.exe"
+            "ccEvtMgr.exe",
+            "smcGui.exe",
+            "snac.exe",
+            "SymCorpUI.exe"
         ],
         "url": "http://www.symantec.com/"
     },
@@ -564,7 +579,6 @@
     "eGambit": {
         "processes": [
             "dasc.exe",
-            "dastray.exe",
             "memscan64.exe",
             "dastray.exe"
         ],
@@ -585,7 +599,8 @@
             "AdAwareTray.exe",
             "WebCompanion.exe",
             "WebCompanionInstaller.exe",
-            "adawarebp.exe"
+            "adawarebp.exe",
+            "ad-watch.exe"
         ],
         "url": "https://www.lavasoft.com/"
     },
@@ -679,7 +694,8 @@
             "nisum.exe",
             "nmain.exe",
             "nprotect.exe",
-            "smcGui.exe"
+            "smcGui.exe",
+            "ns.exe"
         ],
         "url": "https://us.norton.com/"
     },
@@ -695,15 +711,16 @@
         ],
         "url": "https://jiaoyi.yunfan.com/"
     },
-    "safedog": {
+    "SafeDog(安全狗)": {
         "processes": [
             "safedog.exe",
             "SafeDogGuardCenter.exe",
-            "safedogupdatecenter.exe",
-            "safedogguardcenter.exe",
             "SafeDogSiteIIS.exe",
             "SafeDogTray.exe",
-            "SafeDogServerUI.exe"
+            "SafeDogServerUI.exe",
+            "SafeDogSiteApache.exe",
+            "CloudHelper.exe",
+            "SafeDogUpdateCenter.exe"
         ],
         "url": "http://www.safedog.cn/"
     },
@@ -787,7 +804,9 @@
             "HwsPanel.exe",
             "hws_ui.exe",
             "hws.exe",
-            "hwsd.exe"
+            "hwsd.exe",
+            "HwsHostPanel.exe",
+            "HwsHostMaster.exe"
         ],
         "url": "https://www.hws.com/"
     },
@@ -799,7 +818,6 @@
             "HipsDaemon.exe",
             "HipsLog.exe",
             "HipsMain.exe",
-            "usysdiag.exe",
             "wsctrlsvc.exe"
         ],
         "url": "https://www.huorong.cn/"
@@ -819,19 +837,11 @@
     "奇安信天擎": {
         "processes": [
             "TQClient.exe",
-            "TQClient.exe",
             "TQTray.exe",
             "QaxEngManager.exe",
             "TQDefender.exe"
         ],
         "url": "https://www.qianxin.com/product/detail/pid/330"
-    },
-    "Enhanced Mitigation Experience Toolkit": {
-        "processes": [
-            "emet_agent.exe",
-            "emet_service.exe"
-        ],
-        "url": "https://www.microsoft.com/"
     },
     "H+BEDV Datentechnik GmbH": {
         "processes": [
@@ -915,14 +925,22 @@
     },
     "金山毒霸": {
         "processes": [
+            "kxetray.exe",
             "kxescore.exe",
             "kupdata.exe",
-            "kxetray.exe",
-            "kwsprotect64.exe"
+            "kwsprotect64.exe",
+            "kislive.exe",
+            "knewvip.exe",
+            "kscan.exe",
+            "kxecenter.exe",
+            "kxemain.exe",
+            "KWatch.exe",
+            "KSafeSvc.exe",
+            "KSafeTray.exe"
         ],
         "url": "http://www.ijinshan.com/"
     },
-    "Agnitum outpost": {
+    "Agnitum outpost (Outpost Firewall)": {
         "processes": [
             "outpost.exe",
             "acs.exe"
@@ -947,428 +965,9 @@
         ],
         "url": "https://www.elastic.co/"
     },
-    "MaxSecure": {
-        "processes": [
-            "MaxAVPlusDM.exe",
-            "MaxRCSystemTray.exe",
-            "RCSystemTray.exe",
-            "SDSystemTray.exe",
-            "LiveUpdateSD.exe"
-        ],
-        "url": "https://maxsecureantivirus.com/"
-    },
-    "a-squared杀毒": {
-        "processes": [
-            "a2guard.exe"
-        ],
-        "url": ""
-    },
-    "Lavasoft杀毒": {
-        "processes": [
-            "ad-watch.exe"
-        ],
-        "url": ""
-    },
-    "The Cleaner杀毒": {
-        "processes": [
-            "cleaner8.exe"
-        ],
-        "url": ""
-    },
-    "vb32杀毒": {
-        "processes": [
-            "vba32lder.exe"
-        ],
-        "url": ""
-    },
-    "Mongoosa杀毒": {
-        "processes": [
-            "MongoosaGUI.exe"
-        ],
-        "url": ""
-    },
-    "Coranti2012杀毒": {
-        "processes": [
-            "CorantiControlCenter32.exe"
-        ],
-        "url": ""
-    },
-    "F-Prot AntiVirus": {
-        "processes": [
-            "F-PROT.exe"
-        ],
-        "url": ""
-    },
-    "CMC杀毒": {
-        "processes": [
-            "CMCTrayIcon.exe"
-        ],
-        "url": ""
-    },
-    "K7杀毒": {
-        "processes": [
-            "K7TSecurity.exe"
-        ],
-        "url": ""
-    },
-    "UnThreat杀毒": {
-        "processes": [
-            "UnThreat.exe"
-        ],
-        "url": ""
-    },
-    "Shield Antivirus杀毒": {
-        "processes": [
-            "CKSoftShiedAntivirus4.exe"
-        ],
-        "url": ""
-    },
-    "VIRUSfighter杀毒": {
-        "processes": [
-            "AVWatchService.exe"
-        ],
-        "url": ""
-    },
-    "ArcaVir杀毒": {
-        "processes": [
-            "ArcaTasksService.exe"
-        ],
-        "url": ""
-    },
-    "Immunet杀毒": {
-        "processes": [
-            "iptray.exe"
-        ],
-        "url": ""
-    },
-    "PSafe杀毒": {
-        "processes": [
-            "PSafeSysTray.exe"
-        ],
-        "url": ""
-    },
-    "nProtect杀毒": {
-        "processes": [
-            "nspupsvc.exe"
-        ],
-        "url": ""
-    },
-    "SpywareTerminator杀毒": {
-        "processes": [
-            "SpywareTerminatorShield.exe"
-        ],
-        "url": ""
-    },
-    "Bkav杀毒": {
-        "processes": [
-            "BKavService.exe"
-        ],
-        "url": ""
-    },
-    "Windows Defender Antivirus": {
-        "processes": [
-            "MpCmdRun.exe",
-            "MSASCui.exe",
-            "SecurityHealthService.exe"
-        ],
-        "url": ""
-    },
-    "VIPRE": {
-        "processes": [
-            "SBAMSvc.exe",
-            "VipreEdgeProtection.exe",
-            "SBAMTray.exe"
-        ],
-        "url": ""
-    },
-    "Norton杀毒": {
-        "processes": [
-            "ccSvcHst.exe"
-        ],
-        "url": ""
-    },
-    "冰岛": {
-        "processes": [
-            "f-secure.exe"
-        ],
-        "url": ""
-    },
-    "Kaspersky": {
-        "processes": [
-            "avp.exe"
-        ],
-        "url": ""
-    },
-    "江民杀毒": {
-        "processes": [
-            "KvMonXP.exe"
-        ],
-        "url": ""
-    },
-    "瑞星杀毒": {
-        "processes": [
-            "RavMonD.exe",
-            "RavMon.exe"
-        ],
-        "url": ""
-    },
-    "Mcafee": {
-        "processes": [
-            "Mcshield.exe",
-            "Tbmon.exe",
-            "Frameworkservice.exe",
-            "mfevtps.exe",
-            "shstat.exe",
-            "vstskmgr.exe",
-            "engineserver.exe",
-            "mfeann.exe",
-            "udaterui.exe",
-            "naprdmgr.exe",
-            "mctray.exe"
-        ],
-        "url": ""
-    },
-    "ESET NOD32": {
-        "processes": [
-            "egui.exe",
-            "ekrn.exe",
-            "eguiProxy.exe",
-            "EShaSrv.exe"
-        ],
-        "url": ""
-    },
-    "金山毒霸": {
-        "processes": [
-            "kxetray.exe",
-            "kxescore.exe",
-            "kupdata.exe",
-            "kwsprotect64.exe",
-            "kislive.exe",
-            "knewvip.exe",
-            "kscan.exe",
-            "kxecenter.exe",
-            "kxemain.exe"
-        ],
-        "url": ""
-    },
-    "可牛杀毒": {
-        "processes": [
-            "knsdtray.exe"
-        ],
-        "url": ""
-    },
-    "趋势杀毒": {
-        "processes": [
-            "TMBMSRV.exe"
-        ],
-        "url": ""
-    },
-    "Avira(小红伞)": {
-        "processes": [
-            "avcenter.exe",
-            "avguard.exe",
-            "avgnt.exe",
-            "sched.exe"
-        ],
-        "url": ""
-    },
-    "Avast网络安全": {
-        "processes": [
-            "ashDisp.exe"
-        ],
-        "url": ""
-    },
-    "诺顿杀毒": {
-        "processes": [
-            "rtvscan.exe",
-            "nortonsecurity.exe"
-        ],
-        "url": ""
-    },
-    "Symantec Norton": {
-        "processes": [
-            "ccapp.exe"
-        ],
-        "url": ""
-    },
-    "Norton杀毒软件相关进程": {
-        "processes": [
-            "NPFMntor.exe"
-        ],
-        "url": ""
-    },
-    "赛门铁克": {
-        "processes": [
-            "ccSetMgr.exe",
-            "ccevtmgr.exe",
-            "smc.exe",
-            "smcGui.exe",
-            "snac.exe"
-        ],
-        "url": ""
-    },
-    "Norton病毒防火墙": {
-        "processes": [
-            "ccRegVfy.exe",
-            "vptray.exe"
-        ],
-        "url": ""
-    },
-    "金山卫士": {
-        "processes": [
-            "ksafe.exe"
-        ],
-        "url": ""
-    },
-    "QQ电脑管家": {
-        "processes": [
-            "QQPCRTP.exe"
-        ],
-        "url": ""
-    },
-    "流量矿石": {
-        "processes": [
-            "Miner.exe"
-        ],
-        "url": ""
-    },
-    "韩国胶囊": {
-        "processes": [
-            "AYAgent.exe"
-        ],
-        "url": ""
-    },
-    "安博士": {
-        "processes": [
-            "patray.exe"
-        ],
-        "url": ""
-    },
-    "安博士V3": {
-        "processes": [
-            "V3Svc.exe"
-        ],
-        "url": ""
-    },
-    "AVG杀毒": {
-        "processes": [
-            "avgwdsvc.exe"
-        ],
-        "url": ""
-    },
-    "QUICK HEAL杀毒": {
-        "processes": [
-            "QUHLPSVC.exe"
-        ],
-        "url": ""
-    },
-    "微软杀毒": {
-        "processes": [
-            "mssecess.exe"
-        ],
-        "url": ""
-    },
-    "Sophos杀毒": {
-        "processes": [
-            "SavProgress.exe",
-            "SophosUI.exe",
-            "SophosFS.exe",
-            "SophosHealth.exe",
-            "SophosSafestore64.exe",
-            "SophosCleanM.exe",
-            "SophosFileScanner.exe",
-            "SophosNtpService.exe",
-            "SophosOsquery.exe",
-            "Sophos UI.exe"
-        ],
-        "url": ""
-    },
-    "F-Secure杀毒": {
-        "processes": [
-            "fsavgui.exe"
-        ],
-        "url": ""
-    },
-    "比特梵德": {
-        "processes": [
-            "vsserv.exe"
-        ],
-        "url": ""
-    },
-    "熊猫卫士": {
-        "processes": [
-            "remupd.exe"
-        ],
-        "url": ""
-    },
-    "飞塔": {
-        "processes": [
-            "FortiTray.exe"
-        ],
-        "url": ""
-    },
-    "安全狗": {
-        "processes": [
-            "safedog.exe",
-            "SafeDogGuardCenter.exe",
-            "safedogupdatecenter.exe",
-            "safedogguardcenter.exe",
-            "SafeDogSiteIIS.exe",
-            "SafeDogTray.exe",
-            "SafeDogServerUI.exe",
-            "SafeDogSiteApache.exe",
-            "CloudHelper.exe",
-            "SafeDogUpdateCenter.exe"
-        ],
-        "url": ""
-    },
-    "木马克星": {
-        "processes": [
-            "parmor.exe",
-            "Iparmor.exe.exe",
-            "Iparmor.exe"
-        ],
-        "url": ""
-    },
-    "贝壳云安全": {
-        "processes": [
-            "beikesan.exe"
-        ],
-        "url": ""
-    },
     "金山网盾": {
         "processes": [
             "KSWebShield.exe"
-        ],
-        "url": ""
-    },
-    "木马猎手": {
-        "processes": [
-            "TrojanHunter.exe"
-        ],
-        "url": ""
-    },
-    "巨盾网游安全盾": {
-        "processes": [
-            "GG.exe"
-        ],
-        "url": ""
-    },
-    "绿鹰安全精灵": {
-        "processes": [
-            "adam.exe"
-        ],
-        "url": ""
-    },
-    "超级巡警": {
-        "processes": [
-            "AST.exe"
-        ],
-        "url": ""
-    },
-    "墨者安全专家": {
-        "processes": [
-            "ananwidget.exe"
         ],
         "url": ""
     },
@@ -1378,72 +977,9 @@
         ],
         "url": ""
     },
-    "AVG Anti-Virus": {
-        "processes": [
-            "avg.exe"
-        ],
-        "url": ""
-    },
-    "Dr.web": {
-        "processes": [
-            "spidernt.exe"
-        ],
-        "url": ""
-    },
-    "Avira Antivir": {
-        "processes": [
-            "avgaurd.exe"
-        ],
-        "url": ""
-    },
-    "ZoneAlarm": {
-        "processes": [
-            "vsmon.exe"
-        ],
-        "url": ""
-    },
-    "Comodo": {
-        "processes": [
-            "cpf.exe",
-            "cavwp.exe",
-            "ccavsrv.exe",
-            "cmdvirth.exe"
-        ],
-        "url": ""
-    },
-    "Outpost Firewall": {
-        "processes": [
-            "outpost.exe"
-        ],
-        "url": ""
-    },
-    "瑞星防火墙": {
-        "processes": [
-            "rfwmain.exe"
-        ],
-        "url": ""
-    },
     "金山网镖": {
         "processes": [
             "kpfwtray.exe"
-        ],
-        "url": ""
-    },
-    "风云防火墙": {
-        "processes": [
-            "FYFireWall.exe"
-        ],
-        "url": ""
-    },
-    "微点主动防御": {
-        "processes": [
-            "MPMon.exe"
-        ],
-        "url": ""
-    },
-    "天网防火墙": {
-        "processes": [
-            "pfw.exe"
         ],
         "url": ""
     },
@@ -1465,51 +1001,6 @@
         ],
         "url": ""
     },
-    "百度杀毒": {
-        "processes": [
-            "BaiduSdSvc.exe",
-            "BaiduSdTray.exe",
-            "BaiduSd.exe"
-        ],
-        "url": ""
-    },
-    "D盾": {
-        "processes": [
-            "D_Safe_Manage.exe",
-            "d_manage.exe"
-        ],
-        "url": ""
-    },
-    "云锁": {
-        "processes": [
-            "yunsuo_agent_service.exe",
-            "yunsuo_agent_daemon.exe"
-        ],
-        "url": ""
-    },
-    "护卫神·入侵防护系统": {
-        "processes": [
-            "HwsPanel.exe",
-            "hws_ui.exe",
-            "hws.exe",
-            "hwsd.exe",
-            "HwsHostPanel.exe",
-            "HwsHostMaster.exe"
-        ],
-        "url": ""
-    },
-    "网络病毒克星": {
-        "processes": [
-            "WEBSCANX.exe"
-        ],
-        "url": ""
-    },
-    "SPHINX防火墙": {
-        "processes": [
-            "SPHINX.exe"
-        ],
-        "url": ""
-    },
     "百度卫士": {
         "processes": [
             "bddownloader.exe",
@@ -1523,20 +1014,8 @@
         ],
         "url": ""
     },
-    "Avast!5主程序": {
-        "processes": [
-            "AvastUI.exe"
-        ],
-        "url": ""
-    },
     "已知杀软进程,名称暂未收录": {
         "processes": [
-            "emet_agent.exe",
-            "emet_service.exe",
-            "firesvc.exe",
-            "firetray.exe",
-            "hipsvc.exe",
-            "mcafeefire.exe",
             "scan32.exe",
             "mcscript.exe",
             "updaterui.exe",
@@ -1544,27 +1023,22 @@
             "cmdagent.exe",
             "frminst.exe",
             "mcscript_inuse.exe",
-            "AAWTray.exe",
-            "Ad-Aware.exe",
             "_avp32.exe",
             "_avpcc.exe",
             "_avpm.exe",
             "aAvgApi.exe",
             "ackwin32.exe",
-            "adaware.exe",
             "advxdwin.exe",
             "agentsvr.exe",
             "agentw.exe",
             "alertsvc.exe",
             "alevir.exe",
-            "alogserv.exe",
             "amon9x.exe",
             "anti-trojan.exe",
             "antivirus.exe",
             "ants.exe",
             "apimonitor.exe",
             "aplica32.exe",
-            "apvxdwin.exe",
             "arr.exe",
             "atcon.exe",
             "atguard.exe",
@@ -1577,34 +1051,25 @@
             "autodown.exe",
             "autotrace.exe",
             "autoupdate.exe",
-            "avconsol.exe",
             "ave32.exe",
             "avgcc32.exe",
             "avgctrl.exe",
-            "avgemc.exe",
-            "avgrsx.exe",
-            "avgserv.exe",
             "avgserv9.exe",
-            "avgw.exe",
             "avkpop.exe",
             "avkserv.exe",
             "avkservice.exe",
             "avltmain.exe",
             "avnt.exe",
             "avp32.exe",
-            "avpcc.exe",
             "avpdos32.exe",
-            "avpm.exe",
             "avptc32.exe",
             "avpupd.exe",
             "avsched32.exe",
             "avsynmgr.exe",
-            "avwin.exe",
             "avwin95.exe",
             "avwinnt.exe",
             "avwupd.exe",
             "avwupd32.exe",
-            "avwupsrv.exe",
             "avxmonitor9x.exe",
             "avxmonitornt.exe",
             "avxquar.exe",
@@ -1618,9 +1083,7 @@
             "bipcp.exe",
             "bipcpevalsetup.exe",
             "bisp.exe",
-            "blackd.exe",
             "blackice.exe",
-            "blink.exe",
             "blss.exe",
             "bootconf.exe",
             "bootwarn.exe",
@@ -1630,10 +1093,8 @@
             "bs120.exe",
             "bundle.exe",
             "bvt.exe",
-            "ccpxysvc.exe",
             "cdp.exe",
             "cfd.exe",
-            "cfgwiz.exe",
             "cfiadmin.exe",
             "cfiaudit.exe",
             "cfinet.exe",
@@ -1646,14 +1107,11 @@
             "cleanpc.exe",
             "click.exe",
             "cmesys.exe",
-            "cmgrdian.exe",
             "cmon016.exe",
             "connectionmonitor.exe",
-            "cpd.exe",
             "cpf9x206.exe",
             "cpfnt206.exe",
             "ctrl.exe",
-            "cv.exe",
             "cwnb181.exe",
             "cwntdwmo.exe",
             "datemanager.exe",
@@ -1669,7 +1127,6 @@
             "dpf.exe",
             "dpfsetup.exe",
             "dpps2.exe",
-            "drwatson.exe",
             "drweb32.exe",
             "drwebupw.exe",
             "dssagent.exe",
@@ -1690,37 +1147,26 @@
             "exe.avxw.exe",
             "expert.exe",
             "explore.exe",
-            "f-agnt95.exe",
-            "f-prot95.exe",
-            "f-stopw.exe",
-            "fameh32.exe",
             "fast.exe",
-            "fch32.exe",
-            "fih32.exe",
             "findviru.exe",
             "firewall.exe",
-            "fnrb32.exe",
             "fp-win.exe",
             "fp-win_trial.exe",
             "fprot.exe",
             "frw.exe",
             "fsaa.exe",
             "fsav.exe",
-            "fsav32.exe",
             "fsav530stbyb.exe",
             "fsav530wtbyb.exe",
             "fsav95.exe",
             "fsgk32.exe",
             "fsm32.exe",
-            "fsma32.exe",
-            "fsmb32.exe",
             "gator.exe",
             "gbmenu.exe",
             "gbpoll.exe",
             "generics.exe",
             "gmt.exe",
             "guard.exe",
-            "guarddog.exe",
             "hacktracersetup.exe",
             "hbinst.exe",
             "hbsrv.exe",
@@ -1731,7 +1177,6 @@
             "hwpe.exe",
             "hxdl.exe",
             "hxiul.exe",
-            "iamapp.exe",
             "iamserv.exe",
             "iamstats.exe",
             "ibmasn.exe",
@@ -1759,7 +1204,6 @@
             "jedi.exe",
             "kavlite40eng.exe",
             "kavpers40eng.exe",
-            "kavpf.exe",
             "kazza.exe",
             "keenvalue.exe",
             "kerio-pf-213-en-win.exe",
@@ -1779,34 +1223,24 @@
             "lockdown2000.exe",
             "lookout.exe",
             "lordpe.exe",
-            "lsetup.exe",
-            "luall.exe",
             "luau.exe",
-            "lucomserver.exe",
             "luinit.exe",
             "luspt.exe",
             "mapisvc32.exe",
             "mcagent.exe",
-            "mcmnhdlr.exe",
             "mctool.exe",
             "mcupdate.exe",
-            "mcvsrte.exe",
-            "mcvsshld.exe",
             "mfin32.exe",
             "mfw2en.exe",
             "mfweng3.02d30.exe",
             "mgavrtcl.exe",
             "mgavrte.exe",
-            "mghtml.exe",
             "mgui.exe",
             "minilog.exe",
             "mmod.exe",
             "monitor.exe",
             "moolive.exe",
             "mostat.exe",
-            "mpfagent.exe",
-            "mpfservice.exe",
-            "mpftray.exe",
             "mrflux.exe",
             "msapp.exe",
             "msbb.exe",
@@ -1828,10 +1262,7 @@
             "mu0311ad.exe",
             "mwatch.exe",
             "n32scanw.exe",
-            "nav.exe",
             "navap.navapsvc.exe",
-            "navapsvc.exe",
-            "navapw32.exe",
             "navdx.exe",
             "navlu32.exe",
             "navnt.exe",
@@ -1852,15 +1283,12 @@
             "netstat.exe",
             "netutils.exe",
             "nisserv.exe",
-            "nisum.exe",
-            "nmain.exe",
             "nod32.exe",
             "normist.exe",
             "norton_internet_secu_3.0_407.exe",
             "notstart.exe",
             "npf40_tw_98_nt_me_2k.exe",
             "npfmessenger.exe",
-            "nprotect.exe",
             "npscheck.exe",
             "npssvc.exe",
             "nsched32.exe",
@@ -1889,8 +1317,6 @@
             "panixk.exe",
             "patch.exe",
             "pavcl.exe",
-            "pavproxy.exe",
-            "pavsched.exe",
             "pavw.exe",
             "pccwin98.exe",
             "pcfwallicon.exe",
@@ -1898,14 +1324,12 @@
             "pcscan.exe",
             "pdsetup.exe",
             "periscope.exe",
-            "persfw.exe",
             "perswf.exe",
             "pf2.exe",
             "pfwadmin.exe",
             "pgmonitr.exe",
             "pingscan.exe",
             "platin.exe",
-            "pop3trap.exe",
             "poproxy.exe",
             "popscan.exe",
             "portdetective.exe",
@@ -1927,7 +1351,6 @@
             "purge.exe",
             "qconsole.exe",
             "qserver.exe",
-            "rapapp.exe",
             "rav7.exe",
             "rav7win.exe",
             "rav8win32eng.exe",
@@ -1949,10 +1372,9 @@
             "rundll16.exe",
             "ruxdll32.exe",
             "safeweb.exe",
-            "sahagent.exescan32.exe",
+            "sahagent.exe",
             "save.exe",
             "savenow.exe",
-            "sbserv.exe",
             "sc.exe",
             "scam32.exe",
             "scan95.exe",
@@ -1992,7 +1414,6 @@
             "svchosts.exe",
             "sweep95.exe",
             "sweepnet.sweepsrv.sys.swnetsup.exe",
-            "symproxysvc.exe",
             "symtray.exe",
             "sysedit.exe",
             "sysupd.exe",
@@ -2014,7 +1435,6 @@
             "titaninxp.exe",
             "tracert.exe",
             "trickler.exe",
-            "trjscan.exe",
             "trjsetup.exe",
             "trojantrap3.exe",
             "tsadbot.exe",
@@ -2025,7 +1445,6 @@
             "update.exe",
             "upgrad.exe",
             "utpost.exe",
-            "vbcmserv.exe",
             "vbcons.exe",
             "vbust.exe",
             "vbwin9x.exe",
@@ -2039,17 +1458,14 @@
             "virusmdpersonalfirewall.exe",
             "vnlan300.exe",
             "vnpc3000.exe",
-            "vpc32.exe",
             "vpc42.exe",
             "vpfw30s.exe",
             "vscan40.exe",
             "vscenu6.02d30.exe",
             "vsched.exe",
             "vsecomr.exe",
-            "vshwin32.exe",
             "vsisetup.exe",
             "vsmain.exe",
-            "vsstat.exe",
             "vswin9xe.exe",
             "vswinntse.exe",
             "vswinperse.exe",
@@ -2057,7 +1473,6 @@
             "w9x.exe",
             "watchdog.exe",
             "webdav.exe",
-            "webtrap.exe",
             "wfindv32.exe",
             "whoswatchingme.exe",
             "wimmun32.exe",
@@ -2084,21 +1499,15 @@
             "wnad.exe",
             "wnt.exe",
             "wradmin.exe",
-            "wrctrl.exe",
             "wsbgate.exe",
             "wupdater.exe",
             "wupdt.exe",
             "wyvernworksfirewall.exe",
             "xpf202en.exe",
-            "zapro.exe",
             "zapsetup3001.exe",
             "zatutor.exe",
             "zonalm2601.exe",
-            "zonealarm.exe",
-            "AVPM.exe",
             "A2CMD.exe",
-            "A2SERVICE.exe",
-            "A2FREE.exe",
             "ADVCHK.exe",
             "AGB.exe",
             "AKRNL.exe",
@@ -2110,7 +1519,6 @@
             "TROJAN.exe",
             "AVZ.exe",
             "ANTIVIR.exe",
-            "APVXDWIN.exe",
             "ARMOR2NET.exe",
             "ASH.exeexe.exe",
             "ASHENHCD.exe",
@@ -2123,7 +1531,6 @@
             "ASWUPDSV.exe",
             "ASWSCAN.exe",
             "AVCIMAN.exe",
-            "AVCONSOL.exe",
             "AVENGINE.exe",
             "AVESVC.exe",
             "AVEVAL.exe",
@@ -2135,30 +1542,23 @@
             "AVGNSX.exe",
             "AVGCC32.exe",
             "AVGCTRL.exe",
-            "AVGEMC.exe",
             "AVGFWSRV.exe",
             "AVGNTMGR.exe",
-            "AVGSERV.exe",
             "AVGTRAY.exe",
             "AVGUPSVC.exe",
             "AVINITNT.exe",
             "AVKSERV.exe",
             "AVKSERVICE.exe",
             "AVP32.exe",
-            "AVPCC.exe",
             "AVSERVER.exe",
             "AVSCHED32.exe",
             "AVSYNMGR.exe",
             "AVWUPD32.exe",
-            "AVWUPSRV.exe",
             "AVXMONITOR.exe",
             "AVXQUAR.exe",
             "BDSWITCH.exe",
-            "BLACKD.exe",
             "BLACKICE.exe",
             "CAFIX.exe",
-            "BITDEFENDER.exe",
-            "CCEVTMGR.exe",
             "CFP.exe",
             "CFPCONFIG.exe",
             "CFIAUDIT.exe",
@@ -2175,40 +1575,26 @@
             "ESCANHNT.exe",
             "EWIDOCTRL.exe",
             "EZANTIVIRUSREGISTRATIONCHECK.exe",
-            "F-AGNT95.exe",
-            "FAMEH32.exe",
             "FILEMON.exe",
             "FIREWALL.exe",
-            "FORTICLIENT.exe",
             "FORTISCAN.exe",
-            "FPAVSERVER.exe",
-            "FPROTTRAY.exe",
             "FPWIN.exe",
-            "FRESHCLAM.exe",
-            "FSAV32.exe",
             "FSBWSYS.exe",
             "F-SCHED.exe",
             "FSDFWD.exe",
             "FSGK32.exe",
             "FSGK32ST.exe",
             "FSGUIEXE.exe",
-            "FSMA32.exe",
-            "FSMB32.exe",
             "FSPEX.exe",
-            "FSSM32.exe",
-            "F-STOPW.exe",
             "GCASDTSERV.exe",
             "GCASSERV.exe",
             "GIANTANTISPYWARE.exe",
             "GUARDGUI.exe",
             "GUARDNT.exe",
-            "GUARDXSERVICE.exe",
-            "GUARDXKICKOFF.exe",
             "HREGMON.exe",
             "HRRES.exe",
             "HSOCKPE.exe",
             "HUPDATE.exe",
-            "IAMAPP.exe",
             "IAMSERV.exe",
             "ICLOAD95.exe",
             "ICLOADNT.exe",
@@ -2227,7 +1613,6 @@
             "ISATRAY.exe",
             "KAV.exe",
             "KAVMM.exe",
-            "KAVPF.exe",
             "KAVPFW.exe",
             "KAVSTART.exe",
             "KAVSVC.exe",
@@ -2235,33 +1620,25 @@
             "KMAILMON.exe",
             "MAMUTU.exe",
             "MCAGENT.exe",
-            "MCMNHDLR.exe",
             "MCREGWIZ.exe",
             "MCUPDATE.exe",
-            "MCVSSHLD.exe",
             "MINILOG.exe",
             "MYAGTSVC.exe",
             "MYAGTTRY.exe",
-            "NAVAPSVC.exe",
-            "NAVAPW32.exe",
             "NAVLU32.exe",
             "NAVW32.exe",
             "NEOWATCHLOG.exe",
             "NEOWATCHTRAY.exe",
             "NISSERV.exe",
-            "NISUM.exe",
-            "NMAIN.exe",
             "NOD32.exe",
             "NORMIST.exe",
             "NOTSTART.exe",
             "NPAVTRAY.exe",
             "NPFMSG.exe",
-            "NPROTECT.exe",
             "NSCHED32.exe",
             "NSMDTR.exe",
             "NSSSERV.exe",
             "NSSTRAY.exe",
-            "NTRTSCAN.exe",
             "NTOS.exe",
             "NTXCONFIG.exe",
             "NUPGRADE.exe",
@@ -2270,24 +1647,19 @@
             "NVCUT.exe",
             "NWSERVICE.exe",
             "OFCPFWSVC.exe",
-            "ONLINENT.exe",
             "OPSSVC.exe",
             "OP_MON.exe",
             "PAVFIRES.exe",
             "PAVFNSVR.exe",
             "PAVKRE.exe",
             "PAVPROT.exe",
-            "PAVPROXY.exe",
             "PAVPRSRV.exe",
             "PAVSRV51.exe",
             "PAVSS.exe",
             "PCCGUIDE.exe",
             "PCCIOMON.exe",
-            "PCCNTMON.exe",
             "PCCPFW.exe",
             "PCCTLCOM.exe",
-            "PCTAV.exe",
-            "PERSFW.exe",
             "PERTSK.exe",
             "PERVAC.exe",
             "PESTPATROL.exe",
@@ -2301,14 +1673,11 @@
             "QHSET.exe",
             "RTVSCN95.exe",
             "SALITY.exe",
-            "SAPISSVC.exe",
-            "SCANWSCS.exe",
             "SAVADMINSERVICE.exe",
             "SAVSCAN.exe",
             "SCANNINGPROCESS.exe",
             "SDRA64.exe",
             "SDHELP.exe",
-            "SHSTAT.exe",
             "SITECLI.exe",
             "SPBBCSVC.exe",
             "SPIDERCPL.exe",
@@ -2322,7 +1691,6 @@
             "SWDOCTOR.exe",
             "SWNETSUP.exe",
             "SYMLCSVC.exe",
-            "SYMPROXYSVC.exe",
             "SYMSPORT.exe",
             "SYMWSC.exe",
             "SYNMGR.exe",
@@ -2331,7 +1699,6 @@
             "TMNTSRV.exe",
             "TMPROXY.exe",
             "TNBUTIL.exe",
-            "TRJSCAN.exe",
             "VBA32ECM.exe",
             "VBA32IFS.exe",
             "VBA32LDR.exe",
@@ -2339,22 +1706,12 @@
             "VBSNTW.exe",
             "VCRMON.exe",
             "VRFWSVC.exe",
-            "VRMONNT.exe",
-            "VRMONSVC.exe",
             "VRRW32.exe",
             "VSECOMR.exe",
-            "VSHWIN32.exe",
-            "VSSTAT.exe",
             "WATCHDOG.exe",
             "WINSSNOTIFY.exe",
-            "WRCTRL.exe",
             "XCOMMSVR.exe",
             "ZLCLIENT.exe",
-            "ZONEALARM.exe",
-            "afwServ.exe",
-            "KSafeTray.exe",
-            "KSafeSvc.exe",
-            "KWatch.exe",
             "navap.exe",
             "sahagent.exe"
         ],
@@ -2364,19 +1721,6 @@
         "processes": [
             "avkwctl9.exe",
             "AVKWCTL.exe"
-        ],
-        "url": ""
-    },
-    "趋势科技防毒墙网络版客户端": {
-        "processes": [
-            "ntrtscan.exe"
-        ],
-        "url": ""
-    },
-    "ClemWin Free Antivirus": {
-        "processes": [
-            "CLAMTRAY.exe",
-            "clamscan.exe"
         ],
         "url": ""
     },
@@ -2390,22 +1734,6 @@
         "processes": [
             "safeboxTray.exe",
             "360safebox.exe"
-        ],
-        "url": ""
-    },
-    "腾讯电脑管家": {
-        "processes": [
-            "QQPCTray.exe",
-            "QQPCNetFlow.exe",
-            "QQPCRealTimeSpeedup.exe"
-        ],
-        "url": ""
-    },
-    "Malwarebytes Anti-Malware": {
-        "processes": [
-            "MBAMService.exe",
-            "mbam.exe",
-            "mbamtray.exe"
         ],
         "url": ""
     },
@@ -2473,51 +1801,6 @@
         ],
         "url": ""
     },
-    "360保险箱保护程序": {
-        "processes": [
-            "safeboxTray"
-        ],
-        "url": ""
-    },
-    "GData安全防护软件": {
-        "processes": [
-            "AVKCl.exe"
-        ],
-        "url": ""
-    },
-    "Symantec(赛门铁克)": {
-        "processes": [
-            "SymCorpUI.exe"
-        ],
-        "url": ""
-    },
-    "Windows Defender": {
-        "processes": [
-            "MSASCuiL.exe"
-        ],
-        "url": ""
-    },
-    "Kaspersky(卡巴斯基)": {
-        "processes": [
-            "kavfs.exe",
-            "klnagent.exe",
-            "kavtray.exe",
-            "kavfswp.exe"
-        ],
-        "url": ""
-    },
-    "BitDefender杀毒": {
-        "processes": [
-            "secenter.exe"
-        ],
-        "url": ""
-    },
-    "Norton诺顿杀毒": {
-        "processes": [
-            "ns.exe"
-        ],
-        "url": ""
-    },
     "Symantec Shared诺顿邮件防火墙软件": {
         "processes": [
             "SNDSrvc.exe"
@@ -2527,12 +1810,6 @@
     "U盘杀毒专家": {
         "processes": [
             "USBKiller.exe"
-        ],
-        "url": ""
-    },
-    "Outpost防火墙": {
-        "processes": [
-            "acs.exe"
         ],
         "url": ""
     },
@@ -2560,14 +1837,6 @@
         ],
         "url": ""
     },
-    "AVG": {
-        "processes": [
-            "AVGCSRVX",
-            "AVGSvc.exe",
-            "AVGUI.exe"
-        ],
-        "url": ""
-    },
     "阿里云监控": {
         "processes": [
             "CmsGoAgent.windows-amd64."
@@ -2588,28 +1857,6 @@
             "ESCCControl.exe",
             "ESCC.exe",
             "ESCCIndex.exe"
-        ],
-        "url": ""
-    },
-    "McAfee": {
-        "processes": [
-            "fcagate.exe",
-            "fcag.exe",
-            "fcags.exe",
-            "fcagswd.exe",
-            "macompatsvc.exe",
-            "masvc.exe",
-            "mcamnsvc.exe",
-            "mctary.exe",
-            "mfecanary.exe",
-            "mfeconsole.exe",
-            "mfeesp.exe",
-            "mfefire.exe",
-            "mfefw.exe",
-            "mfemms.exe",
-            "mfetp.exe",
-            "mfewc.exe",
-            "mfewch.exe"
         ],
         "url": ""
     },
@@ -2638,17 +1885,12 @@
         ],
         "url": ""
     },
-    "360国际版": {
-        "processes": [
-            "QHActiveDefense.exe"
-        ],
-        "url": ""
-    },
     "360TotalSecurity(360国际版)": {
         "processes": [
             "QHSafeMain.exe",
             "QHSafeTray.exe",
-            "QHWatchdog.exe"
+            "QHWatchdog.exe",
+            "QHActiveDefense.exe"
         ],
         "url": ""
     },
@@ -2735,463 +1977,6 @@
         ],
         "url": ""
     },
-    "ALYac": {
-        "processes": [
-            "aylaunch.exe",
-            "ayupdate2.exe",
-            "AYRTSrv.exe"
-        ],
-        "url": ""
-    },
-    "Acronis": {
-        "processes": [
-            "arsm.exe",
-            "acronis_license_service.exe"
-        ],
-        "url": ""
-    },
-    "Ad-Aware": {
-        "processes": [
-            "AdAwareService.exe",
-            "AdAware.exe"
-        ],
-        "url": ""
-    },
-    "Arcabit": {
-        "processes": [
-            "arcavir.exe",
-            "arcadc.exe",
-            "ArcaVirMaster.exe",
-            "ArcaMainSV.exe"
-        ],
-        "url": ""
-    },
-    "Avast": {
-        "processes": [
-            "AvastSvc.exe",
-            "AvastBrowser.exe",
-            "AfwServ.exe"
-        ],
-        "url": ""
-    },
-    "BitDefender": {
-        "processes": [
-            "Bdagent.exe",
-            "BitDefenderCom.exe",
-            "bdredline.exe",
-            "bdservicehost.exe"
-        ],
-        "url": ""
-    },
-    "Bkav": {
-        "processes": [
-            "Bka.exe",
-            "BkavUtil.exe",
-            "BLuPro.exe"
-        ],
-        "url": ""
-    },
-    "CAT-QuickHeal": {
-        "processes": [
-            "onlinent.exe",
-            "sapissvc.exe",
-            "scanwscs.exe"
-        ],
-        "url": ""
-    },
-    "ClamAV": {
-        "processes": [
-            "freshclam.exe"
-        ],
-        "url": ""
-    },
-    "CrowdStrike Falcon": {
-        "processes": [
-            "csfalconservice.exe",
-            "CSFalconContainer.exe"
-        ],
-        "url": ""
-    },
-    "Cybereason": {
-        "processes": [
-            "CybereasonRansomFree.exe",
-            "CybereasonRansomFreeServiceHost.exe",
-            "CybereasonAV.exe"
-        ],
-        "url": ""
-    },
-    "Cylance": {
-        "processes": [
-            "CylanceSvc.exe"
-        ],
-        "url": ""
-    },
-    "Cyren": {
-        "processes": [
-            "vsedsps.exe",
-            "vseamps.exe",
-            "vseqrts.exe"
-        ],
-        "url": ""
-    },
-    "DrWeb": {
-        "processes": [
-            "drwebcom.exe",
-            "drwebscd.exe",
-            "drweb32w.exe",
-            "dwengine.exes"
-        ],
-        "url": ""
-    },
-    "ESET-NOD32": {
-        "processes": [
-            "ecls.exe"
-        ],
-        "url": ""
-    },
-    "Emsisoft": {
-        "processes": [
-            "a2cmd.exe"
-        ],
-        "url": ""
-    },
-    "Endgame": {
-        "processes": [
-            "endgame.exe"
-        ],
-        "url": ""
-    },
-    "F-Prot": {
-        "processes": [
-            "FProtTray.exe",
-            "FPAVServer.exe"
-        ],
-        "url": ""
-    },
-    "F-Secure": {
-        "processes": [
-            "fssm32.exe",
-            "Fsorsp64.exe"
-        ],
-        "url": ""
-    },
-    "FireEye": {
-        "processes": [
-            "xagtnotif.exe",
-            "xagt.exe"
-        ],
-        "url": ""
-    },
-    "Fortinet": {
-        "processes": [
-            "FortiClient.exe",
-            "FortiScand.exe"
-        ],
-        "url": ""
-    },
-    "GData": {
-        "processes": [
-            "avkcl.exe",
-            "AVKWCtl.exe"
-        ],
-        "url": ""
-    },
-    "Ikarus": {
-        "processes": [
-            "guardxservice.exe",
-            "guardxkickoff.exe"
-        ],
-        "url": ""
-    },
-    "Jiangmin": {
-        "processes": [
-            "KVFW.exe",
-            "KVsrvXP.exe",
-            "KVMonXP.exe",
-            "KVwsc.exe"
-        ],
-        "url": ""
-    },
-    "K7AntiVirus": {
-        "processes": [
-            "K7TSMain.Exe",
-            "K7TSUpdT.exe"
-        ],
-        "url": ""
-    },
-    "Max Secure Software": {
-        "processes": [
-            "SDSystemTray.exe",
-            "MaxRCSystemTray.exe",
-            "RCSystemTray.exe"
-        ],
-        "url": ""
-    },
-    "NANO-Antivirus": {
-        "processes": [
-            "nanoav.exe",
-            "nanoav64.exe",
-            "nanoreport.exe",
-            "nanoreportc.exe",
-            "nanoreportc64.exe",
-            "nanorst.exe",
-            "nanosvc.exe"
-        ],
-        "url": ""
-    },
-    "a-squared free": {
-        "processes": [
-            "a2free.exe",
-            "a2service.exe"
-        ],
-        "url": ""
-    },
-    "Palo Alto Networks": {
-        "processes": [
-            "PanInstaller.exe"
-        ],
-        "url": ""
-    },
-    "Rising": {
-        "processes": [
-            "RsMgrSvc.exe"
-        ],
-        "url": ""
-    },
-    "SUPERAntiSpyware": {
-        "processes": [
-            "superantispyware.exe",
-            "sascore.exe",
-            "SAdBlock.exe",
-            "sabsvc.exe"
-        ],
-        "url": ""
-    },
-    "SecureAge APEX": {
-        "processes": [
-            "UniversalAVService.exe",
-            "EverythingServer.exe",
-            "clamd.exe"
-        ],
-        "url": ""
-    },
-    "Sophos AV": {
-        "processes": [
-            "SavMain.exe"
-        ],
-        "url": ""
-    },
-    "Symantec": {
-        "processes": [
-            "ccEvtMgr.exe"
-        ],
-        "url": ""
-    },
-    "Tencent": {
-        "processes": [
-            "QQPCMgr.exe"
-        ],
-        "url": ""
-    },
-    "TotalDefense": {
-        "processes": [
-            "AMRT.exe",
-            "SWatcherSrv.exe",
-            "Prd.ManagementConsole.exe"
-        ],
-        "url": ""
-    },
-    "Trapmine": {
-        "processes": [
-            "TrapmineEnterpriseService.exe",
-            "TrapmineEnterpriseConfig.exe",
-            "TrapmineDeployer.exe",
-            "TrapmineUpgradeService.exe"
-        ],
-        "url": ""
-    },
-    "TrendMicro": {
-        "processes": [
-            "Pop3Trap.exe",
-            "WebTrap.exe",
-            "PccNTMon.exe"
-        ],
-        "url": ""
-    },
-    "ViRobot": {
-        "processes": [
-            "vrmonnt.exe",
-            "vrmonsvc.exe",
-            "Vrproxyd.exe"
-        ],
-        "url": ""
-    },
-    "Webroot": {
-        "processes": [
-            "npwebroot.exe",
-            "WRSA.exe",
-            "spysweeperui.exe"
-        ],
-        "url": ""
-    },
-    "Yandex": {
-        "processes": [
-            "Yandex.exe",
-            "YandexDisk.exe",
-            "yandesk.exe"
-        ],
-        "url": ""
-    },
-    "Zillya": {
-        "processes": [
-            "zillya.exe",
-            "ZAVAux.exe",
-            "ZAVCore.exe"
-        ],
-        "url": ""
-    },
-    "Zoner": {
-        "processes": [
-            "ZPSTray.exe"
-        ],
-        "url": ""
-    },
-    "eGambit": {
-        "processes": [
-            "dasc.exe",
-            "dastray.exe",
-            "memscan64.exe"
-        ],
-        "url": ""
-    },
-    "eScan": {
-        "processes": [
-            "consctl.exe",
-            "mwaser.exe",
-            "avpmapp.exe"
-        ],
-        "url": ""
-    },
-    "Lavasoft": {
-        "processes": [
-            "LavasoftTcpService.exe",
-            "AdAwareTray.exe",
-            "WebCompanion.exe",
-            "WebCompanionInstaller.exe",
-            "adawarebp.exe"
-        ],
-        "url": ""
-    },
-    "Mongoosa": {
-        "processes": [
-            "mongoose.exe"
-        ],
-        "url": ""
-    },
-    "UnThreat": {
-        "processes": [
-            "utsvc.exe"
-        ],
-        "url": ""
-    },
-    "Shield Antivirus": {
-        "processes": [
-            "shieldtray.exe"
-        ],
-        "url": ""
-    },
-    "VIRUSfighter": {
-        "processes": [
-            "vfproTray.exe"
-        ],
-        "url": ""
-    },
-    "PSafe": {
-        "processes": [
-            "PSafeCategoryFinder.exe",
-            "psafesvc.exe"
-        ],
-        "url": ""
-    },
-    "nProtect": {
-        "processes": [
-            "Npkcmsvc.exe",
-            "npnj5Agent.exe"
-        ],
-        "url": ""
-    },
-    "Spyware Terminator": {
-        "processes": [
-            "SpywareTerminator.exe"
-        ],
-        "url": ""
-    },
-    "eEye Digital Security": {
-        "processes": [
-            "eeyeevnt.exe"
-        ],
-        "url": ""
-    },
-    "Simplysup": {
-        "processes": [
-            "Trjscan.exe"
-        ],
-        "url": ""
-    },
-    "PC Tools AntiVirus": {
-        "processes": [
-            "pctsGui.exe"
-        ],
-        "url": ""
-    },
-    "ClamWin": {
-        "processes": [
-            "ClamTray.exe"
-        ],
-        "url": ""
-    },
-    "安天智甲": {
-        "processes": [
-            "AMediumManager.exe",
-            "kismain.exe"
-        ],
-        "url": ""
-    },
-    "CMC Endpoint Security": {
-        "processes": [
-            "CMCNECore.exe",
-            "cmcepagent.exe",
-            "cmccore.exe",
-            "CMCLog.exe",
-            "CMCFMon.exe"
-        ],
-        "url": ""
-    },
-    "Cynet": {
-        "processes": [
-            "CynetLauncher.exe",
-            "CynetDS.exe",
-            "CynetEPS.exe",
-            "CynetMS.exe",
-            "CynetAR.exe",
-            "CynetGW.exe",
-            "CynetSD64.exe"
-        ],
-        "url": ""
-    },
-    "Elastic": {
-        "processes": [
-            "winlogbeat.exe"
-        ],
-        "url": ""
-    },
-    "MaxSecure": {
-        "processes": [
-            "MaxAVPlusDM.exe",
-            "LiveUpdateSD.exe"
-        ],
-        "url": ""
-    },
     "亚信DS服务端": {
         "processes": [
             "Deep Security Manager.exe"
@@ -3204,15 +1989,6 @@
             "coreFrameworkHost.exe",
             "coreServiceShell.exe",
             "dsvp.exe"
-        ],
-        "url": ""
-    },
-    "奇安信天擎": {
-        "processes": [
-            "TQClient.exe",
-            "TQTray.exe",
-            "QaxEngManager.exe",
-            "TQDefender.exe"
         ],
         "url": ""
     },
@@ -3270,7 +2046,7 @@
         ],
         "url": ""
     },
-    "SentinelOne": {
+    "SentinelOne(哨兵一号)": {
         "processes": [
             "SentinelServiceHost.exe",
             "SentinelStaticEngine.exe",
@@ -3282,7 +2058,7 @@
         ],
         "url": "https://www.sentinelone.com/"
     },
-    "OneSec": {
+    "OneSec(微步)": {
         "processes": [
             "tbAgent.exe",
             "tbAgentSrv.exe",
