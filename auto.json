@@ -2074,8 +2074,13 @@
         ],
         "url": "https://asiainfo-sec.com/product/detail-122.html"
     },
-    "IObit Malware Fighter":{
-		"processes":["IMF.exe","IMFCore.exe","IMFsrv.exe","IMFSrvWsc.exe"],
-		"url":"BD特征库"}
+    "IObit Malware Fighter": {
+        "processes": [
+	    "IMF.exe",
+	    "IMFCore.exe",
+            "IMFsrv.exe",
+	    "IMFSrvWsc.exe"
+	],
+	"url":"BD特征库"
+    } 
 }
-
