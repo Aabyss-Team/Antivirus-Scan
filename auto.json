@@ -2065,5 +2065,13 @@
             "tbGuard.exe"
         ],
         "url": "https://threatbook.cn/onesec"
+    },
+    "亚信安全防毒墙网络版": {
+        "processes": [
+            "PccNT.exe",
+            "PccNTMon.exe",
+            "PccNTUpd.exe"
+        ],
+        "url": "https://asiainfo-sec.com/product/detail-122.html"
     }
 }
