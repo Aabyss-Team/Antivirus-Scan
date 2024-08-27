@@ -2076,11 +2076,11 @@
     },
     "IObit Malware Fighter": {
         "processes": [
-	    "IMF.exe",
-	    "IMFCore.exe",
-            "IMFsrv.exe",
-	    "IMFSrvWsc.exe"
-	],
-	"url":"BD特征库"
+        "IMF.exe",
+        "IMFCore.exe",
+        "IMFsrv.exe",
+        "IMFSrvWsc.exe"
+        ],
+        "url":"https://www.iobit.com/en/malware-fighter.php"
     } 
 }
