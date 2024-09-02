@@ -109,70 +109,84 @@
 </head>
 <body>
     <div class="container">
-        <?php
-        // 初始化变量
-        $result = '';
-        $input = '';
+<?php
+// 初始化变量
+$result = '';
+$input = '';
 
-        // 处理 POST 请求
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $input = $_POST['user_input'] ?? '';
+// 处理 POST 请求
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $input = $_POST['user_input'] ?? '';
 
-            // 按行拆分输入的内容
-            $lines = explode("\n", $input);
+    // 按行拆分输入的内容
+    $lines = explode("\n", $input);
 
-            // 格式化处理：找到每行中的 " K " 和 " KB " 并换行处理
-            $formattedLines = [];
-            foreach ($lines as $line) {
-                $line = trim($line);
+    // 格式化处理：找到每行中的 " K " 和 " KB " 并换行处理
+    $formattedLines = [];
+    foreach ($lines as $line) {
+        $line = trim($line);
 
-                // 处理 " KB " 的格式化
-                if (strpos($line, ' KB ') !== false) {
-                    $parts = explode('KB', $line);
-                    foreach ($parts as $key => $part) {
-                        $formattedLines[] = trim($part) . ($key < count($parts) - 1 ? 'KB' : '');
-                    }
-                } 
-                // 处理 " K " 的格式化
-                elseif (strpos($line, ' K ') !== false) {
-                    $parts = explode('K', $line);
-                    foreach ($parts as $key => $part) {
-                        $formattedLines[] = trim($part) . ($key < count($parts) - 1 ? 'K' : '');
-                    }
-                } else {
-                    $formattedLines[] = $line;
-                }
+        // 处理 " KB " 的格式化
+        if (strpos($line, ' KB ') !== false) {
+            $parts = explode('KB', $line);
+            foreach ($parts as $key => $part) {
+                $formattedLines[] = trim($part) . ($key < count($parts) - 1 ? 'KB' : '');
             }
-
-            // 重组格式化后的文本
-            $formattedText = implode("\n", $formattedLines);
-
-            // 从 JSON 文件读取数据
-            $jsonData = file_get_contents('auto.json');
-            $data = json_decode($jsonData, true);
-
-            // 匹配处理
-            $matches = [];
-            foreach (explode("\n", $formattedText) as $line) {
-                foreach ($data as $key => $value) {
-                    foreach ($value['processes'] as $process) {
-                        if (strpos($line, $process) === 0) { // 仅匹配每行的开头部分
-                            $matches[] = "$process ==> $key: " . $value['url'];
-                        }
-                    }
-                }
+        } 
+        // 处理 " K " 的格式化
+        elseif (strpos($line, ' K ') !== false) {
+            $parts = explode('K', $line);
+            foreach ($parts as $key => $part) {
+                $formattedLines[] = trim($part) . ($key < count($parts) - 1 ? 'K' : '');
             }
+        } else {
+            $formattedLines[] = $line;
+        }
+    }
 
-            // 生成 HTML 显示结果
-            if (count($matches) > 0) {
-                foreach ($matches as $match) {
-                    $result .= "<p>" . htmlspecialchars($match) . "</p>";
+    // 重组格式化后的文本
+    $formattedText = implode("\n", $formattedLines);
+
+    // 从 JSON 文件读取数据
+    $jsonData = file_get_contents('auto.json');
+    $data = json_decode($jsonData, true);
+
+    // 匹配处理
+    $matches = [];
+    foreach (explode("\n", $formattedText) as $line) {
+        foreach ($data as $key => $value) {
+            foreach ($value['processes'] as $process) {
+                if (stripos($line, $process) === 0) { // 仅匹配每行的开头部分，且忽略大小写
+                    // 如果软件名已存在，则添加到现有的进程列表中
+                    if (!isset($matches[$key])) {
+                        $matches[$key] = [
+                            'url' => $value['url'],
+                            'processes' => []
+                        ];
+                    }
+                    $matches[$key]['processes'][] = htmlspecialchars($process);
                 }
-            } else {
-                $result = "<p>未找到匹配的进程，如有漏报欢迎提交至我们的开源项目</br><a href=\"https://github.com/Aabyss-Team/Antivirus-Scan\">https://github.com/Aabyss-Team/Antivirus-Scan</a></p>";
             }
         }
-        ?>
+    }
+    // 去重每个软件名对应的进程列表
+    foreach ($matches as $key => $details) {
+        $matches[$key]['processes'] = array_unique($details['processes']);
+    }
+
+    // 生成 HTML 显示结果
+    if (count($matches) > 0) {
+        foreach ($matches as $softwareName => $details) {
+            $result .= "<p><strong>" . htmlspecialchars($softwareName) . ":</strong> " 
+                        . implode(', ', $details['processes']) . " ==> <a href=\"" 
+                        . htmlspecialchars($details['url']) . "\" target=\"_blank\">" 
+                        . htmlspecialchars($details['url']) . "</a></p>";
+        }
+    } else {
+        $result = "<p>未找到匹配的进程，如有漏报欢迎提交至我们的开源项目</br><a href=\"https://github.com/Aabyss-Team/Antivirus-Scan\">https://github.com/Aabyss-Team/Antivirus-Scan</a></p>";
+    }
+}
+?>
 
         <!-- 表单 -->
         <h1>杀软在线识别-<a href="https://www.aabyss.cn">渊龙Sec安全团队</a></h1>
