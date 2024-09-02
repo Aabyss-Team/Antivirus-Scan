@@ -169,6 +169,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
     }
+    // 去重每个软件名对应的进程列表
+    foreach ($matches as $key => $details) {
+        $matches[$key]['processes'] = array_unique($details['processes']);
+    }
 
     // 生成 HTML 显示结果
     if (count($matches) > 0) {
