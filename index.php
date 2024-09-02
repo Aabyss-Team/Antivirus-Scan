@@ -104,6 +104,8 @@
             alert("已复制: " + copyText.value);
         }
     </script>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>LA.init({id:"KY25ya3KD5WDnLWF",ck:"KY25ya3KD5WDnLWF"})</script>
 </head>
 <body>
     <div class="container">
@@ -119,31 +121,55 @@
             // 按行拆分输入的内容
             $lines = explode("\n", $input);
 
-            // 加载并解析 JSON 文件
+            // 格式化处理：找到每行中的 " K " 和 " KB " 并换行处理
+            $formattedLines = [];
+            foreach ($lines as $line) {
+                $line = trim($line);
+
+                // 处理 " KB " 的格式化
+                if (strpos($line, ' KB ') !== false) {
+                    $parts = explode('KB', $line);
+                    foreach ($parts as $key => $part) {
+                        $formattedLines[] = trim($part) . ($key < count($parts) - 1 ? 'KB' : '');
+                    }
+                } 
+                // 处理 " K " 的格式化
+                elseif (strpos($line, ' K ') !== false) {
+                    $parts = explode('K', $line);
+                    foreach ($parts as $key => $part) {
+                        $formattedLines[] = trim($part) . ($key < count($parts) - 1 ? 'K' : '');
+                    }
+                } else {
+                    $formattedLines[] = $line;
+                }
+            }
+
+            // 重组格式化后的文本
+            $formattedText = implode("\n", $formattedLines);
+
+            // 从 JSON 文件读取数据
             $jsonData = file_get_contents('auto.json');
             $data = json_decode($jsonData, true);
 
-            // 遍历每一行输入
-            foreach ($lines as $line) {
-                $line = trim($line); // 移除前后空白字符
-
-                // 遍历 JSON 数据，检查每个软件的进程列表
-                foreach ($data as $softwareName => $details) {
-                    $processes = $details['processes'];
-                    $url = $details['url'];
-
-                    // 检查是否包含指定的进程名，且匹配行的开头
-                    foreach ($processes as $process) {
-                        if (stripos($line, $process) === 0) {  // 使用 stripos 忽略大小写，并确保匹配开头
-                            $result .= htmlspecialchars($process) . " ==> <strong>" . htmlspecialchars($softwareName) . ":</strong> <a href='" . htmlspecialchars($url) . "' target='_blank'>" . htmlspecialchars($url) . "</a><br>";
+            // 匹配处理
+            $matches = [];
+            foreach (explode("\n", $formattedText) as $line) {
+                foreach ($data as $key => $value) {
+                    foreach ($value['processes'] as $process) {
+                        if (strpos($line, $process) === 0) { // 仅匹配每行的开头部分
+                            $matches[] = "$process ==> $key: " . $value['url'];
                         }
                     }
                 }
             }
 
-            // 如果没有匹配项
-            if ($result === '') {
-                $result = "未找到匹配的进程，如有漏报欢迎提交至我们的开源项目</br><a href=\"https://github.com/Aabyss-Team/Antivirus-Scan\">https://github.com/Aabyss-Team/Antivirus-Scan</a>";
+            // 生成 HTML 显示结果
+            if (count($matches) > 0) {
+                foreach ($matches as $match) {
+                    $result .= "<p>" . htmlspecialchars($match) . "</p>";
+                }
+            } else {
+                $result = "<p>未找到匹配的进程，如有漏报欢迎提交至我们的开源项目</br><a href=\"https://github.com/Aabyss-Team/Antivirus-Scan\">https://github.com/Aabyss-Team/Antivirus-Scan</a></p>";
             }
         }
         ?>
@@ -169,7 +195,8 @@
                 <?php echo $result; ?>
             </div>
         <?php endif; ?>
-        <h4>项目版本号V1.5-2024.08</h4>
+        <h4>项目版本号V1.6-2024.08</h4>
+        <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/KY25ya3KD5WDnLWF/quote.js?theme=0&f=12&display=0,1,0,0,0,1,1,1"></script>
     </div>
 </body>
 </html>
