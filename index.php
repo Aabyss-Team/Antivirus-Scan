@@ -156,7 +156,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     foreach (explode("\n", $formattedText) as $line) {
         foreach ($data as $key => $value) {
             foreach ($value['processes'] as $process) {
-                if (strpos($line, $process) === 0) { // 仅匹配每行的开头部分
+                if (stripos($line, $process) === 0) { // 仅匹配每行的开头部分，且忽略大小写
                     // 如果软件名已存在，则添加到现有的进程列表中
                     if (!isset($matches[$key])) {
                         $matches[$key] = [
