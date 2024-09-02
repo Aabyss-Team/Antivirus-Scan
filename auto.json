@@ -231,11 +231,17 @@
         ],
         "url": "https://www.fireeye.com/"
     },
-    "Fortinet": {
+    "Fortinet（飞塔）": {
         "processes": [
             "FortiClient.exe",
             "FortiTray.exe",
-            "FortiScand.exe"
+            "FortiScand.exe",
+            "FortiWF.exe",
+            "FortiProxy.exe",
+            "FortiESNAC.exe",
+            "FortiSSLVPNdaemon.exe",
+            "FortiTcs.exe",
+            "FctSecSvr.exe"
         ],
         "url": "https://fortiguard.com/"
     },
