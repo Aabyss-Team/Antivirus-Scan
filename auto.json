@@ -1857,7 +1857,7 @@
             "edr_monitor.exe",
             "edr_sec_plan.exe"
         ],
-        "url": ""
+        "url": "https://edr.sangfor.com.cn"
     },
     "启明星辰天珣EDRAgent": {
         "processes": [
@@ -2000,11 +2000,11 @@
         ],
         "url": ""
     },
-    "深信服edr": {
+    "深信服EDR": {
         "processes": [
             "/sangfor/edr/agent"
         ],
-        "url": ""
+        "url": "https://edr.sangfor.com.cn"
     },
     "阿里云云助手守护进程": {
         "processes": [
