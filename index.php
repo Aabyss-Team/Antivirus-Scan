@@ -187,7 +187,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
         <!-- 表单 -->
         <h1>杀软在线识别-<a href="https://www.aabyss.cn">渊龙Sec安全团队</a></h1>
     <h3>如有漏报欢迎提交至我们的开源项目</br><a href="https://github.com/Aabyss-Team/Antivirus-Scan">https://github.com/Aabyss-Team/Antivirus-Scan</a></h3>
@@ -209,7 +208,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <?php echo $result; ?>
             </div>
         <?php endif; ?>
-        <h4>项目版本号V1.6-2024.09</h4>
+        <h4>项目版本号V1.7-2024.09</h4>
     </div>
 </body>
 </html>
