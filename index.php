@@ -104,8 +104,6 @@
             alert("已复制: " + copyText.value);
         }
     </script>
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    <script>LA.init({id:"KY25ya3KD5WDnLWF",ck:"KY25ya3KD5WDnLWF"})</script>
 </head>
 <body>
     <div class="container">
