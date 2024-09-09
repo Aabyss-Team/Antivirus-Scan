@@ -2082,6 +2082,15 @@
         ],
         "url": "https://asiainfo-sec.com/product/detail-122.html"
     },
+    "Illumio ZTS": {
+        "processes": [
+            "venVtapServer.exe",
+            "venPlatformHandler.exe",
+            "venAgentMonitor.exe",
+            "venAgentMgr.exe"
+        ],
+        "url": "https://www.illumio.com/"
+    },
     "IObit Malware Fighter": {
         "processes": [
         "IMF.exe",
