@@ -14,6 +14,7 @@
 
 ## 📝 TODO
 
+* [x] 新增对于 `NuboshEndpoint` 奇安信统一服务器安全进程的识别，感谢 @byyanxia 师傅提供的资料
 * [x] 进行CDN链路的优化，在线识别的网站允许全球访问
 * [x] 感谢 @msmoshang 师傅提交的PR，对杀软识别结果的去重处理
 * [x] 感谢 @Mr-xn 师傅提交的PR，新增对于 `Norton` 以及 `Kaspersky` 的识别补充
