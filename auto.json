@@ -2091,6 +2091,12 @@
         ],
         "url": "https://www.illumio.com/"
     },
+    "奇安信统一服务器安全": {
+        "processes": [
+            "NuboshEndpoint.exe"
+        ],
+        "url": "https://www.qianxin.com/product/detail/pid/394"
+    },
     "IObit Malware Fighter": {
         "processes": [
         "IMF.exe",
