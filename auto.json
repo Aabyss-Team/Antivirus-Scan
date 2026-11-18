@@ -188,7 +188,9 @@
             "ecls.exe",
             "ekrn.exe",
             "eguiProxy.exe",
-            "EShaSrv.exe"
+            "EShaSrv.exe",
+            "efwd.exe",
+            "ERAAgent.exe"
         ],
         "url": "https://www.eset.com/us/home/antivirus/"
     },
@@ -287,6 +289,15 @@
             "FctSecSvr.exe"
         ],
         "url": "https://fortiguard.com/"
+    },
+    "FortiEDR（飞塔）": {
+        "processes": [
+            "FortiEDRCollectorService.exe",
+            "FortiEDRCollector.exe",
+            "FortiEDRAvScanner.exe",
+            "FortiEDREventLogTool.exe"
+        ],
+        "url": "https://www.fortinet.com/products/endpoint-security/fortiedr"
     },
     "GData": {
         "processes": [
@@ -976,6 +987,12 @@
             "kismain.exe"
         ],
         "url": "https://antiy.cn/"
+    },
+    "Sonicwall": {
+        "processes": [
+            "swagent.exe"
+        ],
+        "url": "https://www.sonicwall.com/"
     },
     "CMC Endpoint Security": {
         "processes": [
@@ -1744,7 +1761,6 @@
             "SPYXX.exe",
             "SS3EDIT.exe",
             "STOPSIGNAV.exe",
-            "SWAGENT.exe",
             "SWDOCTOR.exe",
             "SWNETSUP.exe",
             "SYMLCSVC.exe",
