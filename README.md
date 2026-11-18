@@ -14,6 +14,9 @@
 
 ## 📝 TODO
 
+* [x] 2026-11-18 新增对于 `FortiEDR` 飞塔EDR的识别补充
+* [x] 2026-11-18 优化对于 `Sophos` Sophos相关进程的识别补充
+* [x] 2026-11-18 新增对于 `Sonicwall` Sonicwall的识别，感谢 @BugFor-Pings 师傅提供的资料
 * [x] 2025-10-22 新增对于 `Windows Defender Advanced Threat Protection` Defender ATP的识别，感谢 @Re1axCyber 师傅提供的资料
 * [x] 2025-10-22 感谢 @namoen0301 师傅提交的PR，优化对于 `F-Secure & WithSecure` 的识别补充
 * [x] 2025-7-8 感谢 @Fadouse 师傅提交的PR，新增对于 `Elastic EDR` 的识别补充
