@@ -1956,7 +1956,8 @@
     },
     "Sophos MCS Agent": {
         "processes": [
-            "McsAgent.exe"
+            "McsAgent.exe",
+            "McsClient.exe"
         ],
         "url": ""
     },
