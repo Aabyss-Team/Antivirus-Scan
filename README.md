@@ -52,4 +52,12 @@
 
 ## 🙏 感谢各位师傅
 
+本项目的完成离不开以下小伙伴的贡献，感谢他们的付出！
+
+<a href="https://github.com/Aabyss-Team/Antivirus-Scan/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Aabyss-Team/Antivirus-Scan" />
+</a>
+
+Star趋势图，感谢各位师傅点的Star~
+
 [![Star History Chart](https://api.star-history.com/svg?repos=Aabyss-Team/Antivirus-Scan&type=Date)](https://star-history.com/#Aabyss-Team/Antivirus-Scan&Date)
